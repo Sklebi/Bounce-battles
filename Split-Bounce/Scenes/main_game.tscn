@@ -22,7 +22,9 @@ size_flags_horizontal = 3
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/IreneGame" unique_id=2112848455]
+handle_input_locally = false
 size = Vector2i(958, 1080)
+render_target_update_mode = 4
 
 [node name="ConnorGame" type="SubViewportContainer" parent="HBoxContainer" unique_id=304599175]
 layout_mode = 2
@@ -30,4 +32,6 @@ size_flags_horizontal = 3
 stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/ConnorGame" unique_id=339386409]
+handle_input_locally = false
 size = Vector2i(958, 1080)
+render_target_update_mode = 4
