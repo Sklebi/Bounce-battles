@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://b1sagcdkumkwx"]
 
 [ext_resource type="PackedScene" uid="uid://1l42kltl5etb" path="res://Scenes/platformer_player.tscn" id="1_41awe"]
+[ext_resource type="Texture2D" uid="uid://btbyjcnvqicht" path="res://Sprites/background.png" id="1_xp55e"]
 [ext_resource type="Script" uid="uid://nliynao0w6xc" path="res://Scripts/camera_2d.gd" id="2_6hv7n"]
 [ext_resource type="PackedScene" uid="uid://bwpli0e848aae" path="res://Scenes/platform.tscn" id="2_k0oe1"]
 [ext_resource type="Script" uid="uid://gd0sgkqdj0me" path="res://Scripts/label.gd" id="3_h786q"]
 [ext_resource type="Script" uid="uid://buoon2byw3xr7" path="res://Scripts/sprite_2d.gd" id="4_xp55e"]
-[ext_resource type="Texture2D" uid="uid://qfyhmkxl8h3" path="res://Sprites/New Piskel-1.png (1).png" id="5_k5hyf"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_67uft"]
 
@@ -17,7 +17,7 @@ z_index = -2
 texture_repeat = 2
 position = Vector2(-450, 0)
 scale = Vector2(40, 40)
-texture = ExtResource("5_k5hyf")
+texture = ExtResource("1_xp55e")
 region_enabled = true
 region_rect = Rect2(0, 0, 50, 2000)
 script = ExtResource("4_xp55e")
