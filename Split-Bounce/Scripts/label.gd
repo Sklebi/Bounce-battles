@@ -4,4 +4,4 @@ extends Label
 
 func _process(delta: float) -> void:
 	if camera_2d:
-		text = "Score: %.0f" % -camera_2d.global_position.y
+		text = "Score: %.0f" % (-camera_2d.global_position.y + 1000)
