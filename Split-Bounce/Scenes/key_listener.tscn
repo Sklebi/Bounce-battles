@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cxv3o5t53mekx"]
+
+[ext_resource type="Texture2D" uid="uid://5k07j2x07kbc" path="res://Sprites/arrows.webp" id="1_2k37l"]
+[ext_resource type="Script" uid="uid://c20oo0ilydgmu" path="res://Scenes/key_listener.gd" id="2_rgl2n"]
+
+[node name="KeyListener" type="Sprite2D" unique_id=1836824943]
+texture = ExtResource("1_2k37l")
+hframes = 4
+vframes = 3
+script = ExtResource("2_rgl2n")
