@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bqvn8x8bbrubo"]
+
+[node name="MainGame" type="Control" unique_id=1144787829]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2021844125]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="IreneGame" type="SubViewportContainer" parent="HBoxContainer" unique_id=776280661]
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/IreneGame" unique_id=2112848455]
+size = Vector2i(958, 1080)
+
+[node name="ConnorGame" type="SubViewportContainer" parent="HBoxContainer" unique_id=304599175]
+layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/ConnorGame" unique_id=339386409]
+size = Vector2i(958, 1080)
