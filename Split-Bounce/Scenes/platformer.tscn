@@ -1,23 +1,34 @@
 [gd_scene format=3 uid="uid://b1sagcdkumkwx"]
 
 [ext_resource type="PackedScene" uid="uid://1l42kltl5etb" path="res://Scenes/platformer_player.tscn" id="1_41awe"]
-[ext_resource type="Texture2D" uid="uid://cbq0bbq7cpmrw" path="res://Sprites/icon.svg" id="2_k0oe1"]
+[ext_resource type="Script" uid="uid://nliynao0w6xc" path="res://Scripts/camera_2d.gd" id="2_6hv7n"]
+[ext_resource type="PackedScene" uid="uid://bwpli0e848aae" path="res://Scenes/platform.tscn" id="2_k0oe1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_67uft"]
 
 [node name="Platformer" type="Node2D" unique_id=69007234]
 
 [node name="PlatformerPlayer" parent="." unique_id=943425147 instance=ExtResource("1_41awe")]
+position = Vector2(0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1825364379]
 position = Vector2(1, -1)
+position_smoothing_enabled = true
+script = ExtResource("2_6hv7n")
 
-[node name="Camera2D" type="Camera2D" parent="PlatformerPlayer" unique_id=1825364379]
-zoom = Vector2(5, 5)
+[node name="Platform" parent="." unique_id=185753018 instance=ExtResource("2_k0oe1")]
+position = Vector2(5, 113)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1256831137]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2082224316]
+position = Vector2(-450, -8)
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=2108836987]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1639508341]
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_67uft")
 
-[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer" unique_id=1901304104]
-offset_left = -62.0
-offset_top = -59.0
-offset_right = 66.0
-offset_bottom = 69.0
-texture = ExtResource("2_k0oe1")
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=102600982]
+position = Vector2(450, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=281712096]
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_67uft")
