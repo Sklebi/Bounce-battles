@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cye5eafl6bdkq"]
 
+[ext_resource type="Script" uid="uid://btqpwckua7e7w" path="res://Scenes/game_ui.gd" id="1_gek4i"]
+
 [node name="GameUI" type="Control" unique_id=1004288952]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gek4i")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1470679968]
 
