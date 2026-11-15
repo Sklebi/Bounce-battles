@@ -1,17 +1,17 @@
 [gd_scene format=3 uid="uid://1l42kltl5etb"]
 
 [ext_resource type="Script" uid="uid://bnptkn65tux3y" path="res://Scripts/platformer_player.gd" id="1_ng8nl"]
-[ext_resource type="Texture2D" uid="uid://qfyhmkxl8h3" path="res://Sprites/New Piskel-1.png (1).png" id="1_t0id2"]
+[ext_resource type="Texture2D" uid="uid://dras4lmvka7so" path="res://Sprites/New Piskel-1.png (2).png" id="2_ng8nl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ng8nl"]
-atlas = ExtResource("1_t0id2")
+[sub_resource type="AtlasTexture" id="AtlasTexture_cp3es"]
+atlas = ExtResource("2_ng8nl")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_elqqe"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ng8nl")
+"texture": SubResource("AtlasTexture_cp3es")
 }],
 "loop": 1,
 "name": &"default",
