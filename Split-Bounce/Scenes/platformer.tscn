@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://1l42kltl5etb" path="res://Scenes/platformer_player.tscn" id="1_41awe"]
 [ext_resource type="Script" uid="uid://nliynao0w6xc" path="res://Scripts/camera_2d.gd" id="2_6hv7n"]
 [ext_resource type="PackedScene" uid="uid://bwpli0e848aae" path="res://Scenes/platform.tscn" id="2_k0oe1"]
+[ext_resource type="Script" uid="uid://gd0sgkqdj0me" path="res://Scripts/label.gd" id="3_h786q"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_67uft"]
 
@@ -16,13 +17,15 @@ position = Vector2(1, -1)
 position_smoothing_enabled = true
 script = ExtResource("2_6hv7n")
 
-[node name="Label" type="Label" parent="Camera2D" unique_id=68435132]
+[node name="Label" type="Label" parent="Camera2D" unique_id=68435132 node_paths=PackedStringArray("camera_2d")]
 offset_left = -424.0
 offset_top = -362.0
 offset_right = -322.0
 offset_bottom = -317.0
 theme_override_font_sizes/font_size = 32
 text = "Score: "
+script = ExtResource("3_h786q")
+camera_2d = NodePath("..")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2082224316]
 position = Vector2(-450, -8)
