@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bnp4lq8ke4l20"]
 
 [ext_resource type="PackedScene" uid="uid://cxv3o5t53mekx" path="res://Scenes/key_listener.tscn" id="1_jcjmw"]
+[ext_resource type="PackedScene" uid="uid://cye5eafl6bdkq" path="res://Scenes/game_ui.tscn" id="2_jtjkd"]
 
 [node name="GameLevel" type="Node2D" unique_id=1299029230]
 
@@ -9,19 +10,26 @@
 [node name="KeyListener" parent="." unique_id=1836824943 instance=ExtResource("1_jcjmw")]
 position = Vector2(-120, 500)
 offset = Vector2(0, 5)
-key_name = "button_A"
 
 [node name="KeyListener2" parent="." unique_id=1662441866 instance=ExtResource("1_jcjmw")]
 position = Vector2(-40, 500)
 frame = 1
-key_name = "button_S"
 
 [node name="KeyListener3" parent="." unique_id=1133648728 instance=ExtResource("1_jcjmw")]
 position = Vector2(40, 500)
 frame = 2
-key_name = "button_W"
 
 [node name="KeyListener4" parent="." unique_id=1104088577 instance=ExtResource("1_jcjmw")]
 position = Vector2(120, 500)
 frame = 3
-key_name = "button_D"
+
+[node name="GameUI" parent="." unique_id=1004288952 instance=ExtResource("2_jtjkd")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 69.0
+offset_top = 43.0
+offset_right = 69.0
+offset_bottom = 43.0
+grow_horizontal = 1
+grow_vertical = 1

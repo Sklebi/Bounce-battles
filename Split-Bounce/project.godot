@@ -16,6 +16,10 @@ config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 <<<<<<<HEADrun/main_scene="uid://b1sagcdkumkwx"
 
+[autoload]
+
+Signals="*uid://1kumd4t784su"
+
 [display]
 
 window/size/viewport_width=1920

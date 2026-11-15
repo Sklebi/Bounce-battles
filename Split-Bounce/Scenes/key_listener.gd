@@ -19,10 +19,10 @@ func _process(_delta):
 	
 func CreateFallingKey():
 	var fk_inst = falling_key.instantiate()
-	get_tree().get_root().call_deferred("add_child", fk_inst)
-	fk_inst.Setup(position.x, frame + 4)
-
+	get_parent().add_child(fk_inst)
+	fk_inst.Setup(position.x, frame + 4) # Use local position.x
 	falling_key_queue.push_back(fk_inst)
+
 
 func _on_random_spawn_timer_timeout() -> void:
 	CreateFallingKey() # Replace with function body.
