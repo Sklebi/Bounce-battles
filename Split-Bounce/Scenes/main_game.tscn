@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b1sagcdkumkwx" path="res://Scenes/platformer.tscn" id="1_l756w"]
 [ext_resource type="PackedScene" uid="uid://bnp4lq8ke4l20" path="res://Scenes/game_level.tscn" id="1_pu3va"]
+[ext_resource type="Script" uid="uid://714d5tf22hw0" path="res://Scripts/label_222.gd" id="3_0e3vx"]
 
 [node name="MainGame" type="Control" unique_id=1144787829]
 layout_mode = 3
@@ -44,3 +45,33 @@ render_target_update_mode = 4
 
 [node name="Platformer" parent="HBoxContainer/ConnorGame/SubViewport" unique_id=69007234 instance=ExtResource("1_l756w")]
 position = Vector2(474, 546)
+
+[node name="Timer" type="Timer" parent="." unique_id=1899400790]
+wait_time = 15.0
+autostart = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=157377475]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=919830729]
+anchors_preset = -1
+anchor_right = 0.261
+anchor_bottom = 0.20500001
+offset_left = 629.0
+offset_top = 77.0
+offset_right = 427.87997
+offset_bottom = -65.40001
+theme_override_font_sizes/font_size = 32
+text = "Time Until Bounce: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1926424674]
+anchors_preset = -1
+anchor_right = 0.64100003
+anchor_bottom = 0.34500003
+offset_left = 1016.0
+offset_top = 96.0
+offset_right = -174.7201
+offset_bottom = -188.60004
+theme_override_font_sizes/font_size = 64
+script = ExtResource("3_0e3vx")
