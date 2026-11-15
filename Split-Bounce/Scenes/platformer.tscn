@@ -1,25 +1,20 @@
 [gd_scene format=3 uid="uid://b1sagcdkumkwx"]
 
-[ext_resource type="Texture2D" uid="uid://qfyhmkxl8h3" path="res://Sprites/New Piskel-1.png (1).png" id="1_41awe"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k0oe1"]
-atlas = ExtResource("1_41awe")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_elqqe"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k0oe1")
-}],
-"loop": 1,
-"name": &"default",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://1l42kltl5etb" path="res://Scenes/platformer_player.tscn" id="1_41awe"]
+[ext_resource type="Texture2D" uid="uid://cbq0bbq7cpmrw" path="res://Sprites/icon.svg" id="2_k0oe1"]
 
 [node name="Platformer" type="Node2D" unique_id=69007234]
 
-[node name="Player" type="RigidBody2D" parent="." unique_id=191072222]
+[node name="PlatformerPlayer" parent="." unique_id=943425147 instance=ExtResource("1_41awe")]
+position = Vector2(1, -1)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1236738683]
-sprite_frames = SubResource("SpriteFrames_elqqe")
+[node name="Camera2D" type="Camera2D" parent="PlatformerPlayer" unique_id=1825364379]
+zoom = Vector2(5, 5)
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=5729945]
+repeat_times = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1981072328]
+z_index = -1
+position = Vector2(0, -2)
+texture = ExtResource("2_k0oe1")
