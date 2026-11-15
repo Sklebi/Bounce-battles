@@ -30,6 +30,7 @@ size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="GameLevel" parent="HBoxContainer/IreneGame/SubViewport" unique_id=1299029230 instance=ExtResource("1_pu3va")]
+texture_filter = 1
 
 [node name="ConnorGame" type="SubViewportContainer" parent="HBoxContainer" unique_id=304599175]
 layout_mode = 2
@@ -42,5 +43,4 @@ size = Vector2i(958, 1080)
 render_target_update_mode = 4
 
 [node name="Platformer" parent="HBoxContainer/ConnorGame/SubViewport" unique_id=69007234 instance=ExtResource("1_l756w")]
-texture_filter = 1
 position = Vector2(474, 546)

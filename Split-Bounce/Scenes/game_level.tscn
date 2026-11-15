@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cxv3o5t53mekx" path="res://Scenes/key_listener.tscn" id="1_jcjmw"]
 [ext_resource type="PackedScene" uid="uid://cye5eafl6bdkq" path="res://Scenes/game_ui.tscn" id="2_jtjkd"]
+[ext_resource type="Texture2D" uid="uid://qfyhmkxl8h3" path="res://Sprites/New Piskel-1.png (1).png" id="3_ht4rx"]
 
 [node name="GameLevel" type="Node2D" unique_id=1299029230]
 
@@ -37,3 +38,9 @@ offset_right = 69.0
 offset_bottom = 43.0
 grow_horizontal = 1
 grow_vertical = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=7454010]
+z_index = -2
+scale = Vector2(40, 40)
+texture = ExtResource("3_ht4rx")
+offset = Vector2(12.36, 0)
