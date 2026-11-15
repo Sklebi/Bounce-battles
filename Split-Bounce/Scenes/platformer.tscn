@@ -16,6 +16,14 @@ position = Vector2(1, -1)
 position_smoothing_enabled = true
 script = ExtResource("2_6hv7n")
 
+[node name="Label" type="Label" parent="Camera2D" unique_id=68435132]
+offset_left = -424.0
+offset_top = -362.0
+offset_right = -322.0
+offset_bottom = -317.0
+theme_override_font_sizes/font_size = 32
+text = "Score: "
+
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2082224316]
 position = Vector2(-450, -8)
 
