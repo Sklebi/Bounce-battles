@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://1l42kltl5etb"]
 
-[ext_resource type="Script" uid="uid://bnptkn65tux3y" path="res://platformer_player.gd" id="1_ng8nl"]
+[ext_resource type="Script" uid="uid://bnptkn65tux3y" path="res://Scripts/platformer_player.gd" id="1_ng8nl"]
 [ext_resource type="Texture2D" uid="uid://qfyhmkxl8h3" path="res://Sprites/New Piskel-1.png (1).png" id="1_t0id2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ng8nl"]
@@ -27,8 +27,10 @@ script = ExtResource("1_ng8nl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=800225408]
 position = Vector2(1, -1)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_elqqe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1694524431]
 position = Vector2(-2, -1)
+scale = Vector2(2, 2)
 shape = SubResource("CapsuleShape2D_elqqe")

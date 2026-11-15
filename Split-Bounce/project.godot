@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Haven GAMEEEE"
-run/main_scene="uid://bnp4lq8ke4l20"
+run/main_scene="uid://bqvn8x8bbrubo"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://Sprites/icon.svg"
 <<<<<<<HEADrun/main_scene="uid://b1sagcdkumkwx"
