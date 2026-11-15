@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dp35axx6kqtk"]
+
+[ext_resource type="Texture2D" uid="uid://d2ii58xjm5xeh" path="res://Sprites/THREE.png" id="1_hfpfa"]
+[ext_resource type="Texture2D" uid="uid://2e6n72moxtu3" path="res://Sprites/FOUR.png" id="2_ge3ts"]
+[ext_resource type="Texture2D" uid="uid://c6jgf4fic2tjw" path="res://Sprites/two.png" id="3_wtp36"]
+[ext_resource type="Texture2D" uid="uid://bpnfhioiq78rv" path="res://Sprites/one.png" id="4_b2u63"]
+[ext_resource type="Script" uid="uid://b6h3s32ybcl1c" path="res://animated_sprite_2d.gd" id="5_sa4u8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gn1kj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hfpfa")
+}],
+"loop": 1,
+"name": &"DOWN",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ge3ts")
+}],
+"loop": 1,
+"name": &"LEFT",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_wtp36")
+}],
+"loop": 1,
+"name": &"RIGHT",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_b2u63")
+}],
+"loop": 1,
+"name": &"UP",
+"speed": 5.0
+}]
+
+[node name="redGuy" type="Node2D" unique_id=204647595]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1540207184]
+sprite_frames = SubResource("SpriteFrames_gn1kj")
+animation = &"UP"
+script = ExtResource("5_sa4u8")
