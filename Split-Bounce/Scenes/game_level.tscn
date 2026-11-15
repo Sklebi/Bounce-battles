@@ -10,18 +10,22 @@
 [node name="KeyListener" parent="." unique_id=1836824943 instance=ExtResource("1_jcjmw")]
 position = Vector2(-120, 500)
 offset = Vector2(0, 5)
+key_name = "button_A"
 
 [node name="KeyListener2" parent="." unique_id=1662441866 instance=ExtResource("1_jcjmw")]
 position = Vector2(-40, 500)
 frame = 1
+key_name = "button_S"
 
 [node name="KeyListener3" parent="." unique_id=1133648728 instance=ExtResource("1_jcjmw")]
 position = Vector2(40, 500)
 frame = 2
+key_name = "button_W"
 
 [node name="KeyListener4" parent="." unique_id=1104088577 instance=ExtResource("1_jcjmw")]
 position = Vector2(120, 500)
 frame = 3
+key_name = "button_D"
 
 [node name="GameUI" parent="." unique_id=1004288952 instance=ExtResource("2_jtjkd")]
 anchors_preset = 0
