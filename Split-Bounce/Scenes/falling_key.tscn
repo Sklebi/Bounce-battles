@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dcb1k55soda2l" path="res://Scenes/falling_key.gd" id="2_plh85"]
 
 [node name="FallingKey" type="Sprite2D" unique_id=1521116299]
+scale = Vector2(3, 3)
 texture = ExtResource("1_rfl2t")
 hframes = 4
 vframes = 3
