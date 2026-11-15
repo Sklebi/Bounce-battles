@@ -11,10 +11,13 @@ position = Vector2(1, -1)
 [node name="Camera2D" type="Camera2D" parent="PlatformerPlayer" unique_id=1825364379]
 zoom = Vector2(5, 5)
 
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=5729945]
-repeat_times = 10
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1256831137]
 
-[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1981072328]
-z_index = -1
-position = Vector2(0, -2)
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=2108836987]
+
+[node name="TextureRect" type="TextureRect" parent="ParallaxBackground/ParallaxLayer" unique_id=1901304104]
+offset_left = -62.0
+offset_top = -59.0
+offset_right = 66.0
+offset_bottom = 69.0
 texture = ExtResource("2_k0oe1")
