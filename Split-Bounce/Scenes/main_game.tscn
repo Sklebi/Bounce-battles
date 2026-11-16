@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b1sagcdkumkwx" path="res://Scenes/platformer.tscn" id="1_l756w"]
 [ext_resource type="PackedScene" uid="uid://bnp4lq8ke4l20" path="res://Scenes/game_level.tscn" id="1_pu3va"]
 [ext_resource type="Script" uid="uid://714d5tf22hw0" path="res://Scripts/label_222.gd" id="3_0e3vx"]
+[ext_resource type="Script" uid="uid://bv2ng1qng56am" path="res://Scripts/timer.gd" id="3_6j5ir"]
 
 [node name="MainGame" type="Control" unique_id=1144787829]
 layout_mode = 3
@@ -49,6 +50,7 @@ position = Vector2(474, 546)
 [node name="Timer" type="Timer" parent="." unique_id=1899400790]
 wait_time = 15.0
 autostart = true
+script = ExtResource("3_6j5ir")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=157377475]
 
